@@ -8,10 +8,10 @@ django = "*"
 psycopg2-binary = "*"
 whitenoise = "*"
 gunicorn = "*"
-django-extensions = "*"
+django-debug-toolbar = "*"
 
 [dev-packages]
-django-debug-toolbar = "*"
+django-extensions = "*"
 pytest-dotenv = "*"
 pytest-django = "*"
 pytest-cov = "*"
