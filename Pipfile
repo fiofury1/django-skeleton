@@ -9,9 +9,9 @@ psycopg2-binary = "*"
 whitenoise = "*"
 gunicorn = "*"
 django-debug-toolbar = "*"
+django-extensions = "*"
 
 [dev-packages]
-django-extensions = "*"
 pytest-dotenv = "*"
 pytest-django = "*"
 pytest-cov = "*"
