@@ -72,11 +72,9 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    # Tells Django to use 'whitenoise' in development rather than Django default.
-    "whitenoise.runserver_nostatic",
-    "django.contrib.staticfiles",
     # Third-party apps
-    "django_extensions",
+    "whitenoise.runserver_nostatic", # Tells Django to use 'whitenoise' in development rather than Django default.
+    "django.contrib.staticfiles",
     # Local apps
     "accounts",
     "main",
@@ -256,6 +254,7 @@ CSRF_COOKIE_SECURE = bool(int(get_env_variable("CSRF_COOKIE_SECURE")))
 if DEBUG:
     # For Django Debug Toolbar
     INSTALLED_APPS += [
+        "django_extensions",
         "debug_toolbar",
     ]
     MIDDLEWARE += [
