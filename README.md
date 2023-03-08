@@ -102,9 +102,8 @@ The project has been set up with the following functionality/configuration:
      - Django Dev Server used by default for DEV and TEST.
      - Gunicorn for PROD.
 - Other Packages
-     - [dev-packages]
-          - django-debug-toolbar
-          - django-extensions
+     - django-debug-toolbar
+     - django-extensions
 - Misc/Other
      - Time Zone as 'America/New York'
 
