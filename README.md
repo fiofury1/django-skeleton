@@ -2,7 +2,7 @@
 
 A Django project starter template intentionally preconfigured with "bare bones" functionality.
 
-**Current Django Version:** &nbsp;Django 4.1.7
+**Current Django Version:** &nbsp;Django 4.2
 
 Deployed on [Heroku](https://dj-skel.herokuapp.com/)
 
