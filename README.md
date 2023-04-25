@@ -147,6 +147,10 @@ use the latest patch release (e.g. for 2.1, use 2.1.15).
 
 To update:
 - Recommend first resolving any depreciation warning messages issued when running test suite in pytest. 
+     - Look into django-upgrade package. https://github.com/adamchainz/django-upgrade
+     - Note that when running the local development server can use the following to view warnings:
+          - `$ python -Wd manage.py runserver` to view deprecation warnings.
+          - `$ python -Wa manage.py runserver` to view all warnings.
 - Update all packages/dependencies.
      (Hints:  
      - Use `$ pipenv update --outdated` to see which packages are out of date
