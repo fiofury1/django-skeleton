@@ -2,7 +2,7 @@
 
 A Django project starter template intentionally preconfigured with "bare bones" functionality.
 
-**Current Django Version:** &nbsp;Django 4.2.1
+**Current Django Version:** &nbsp;Django 4.2.2
 
 Deployed on [Heroku](https://dj-skel.herokuapp.com/)
 
@@ -152,7 +152,9 @@ To update:
           - `$ python -Wd manage.py runserver` to view deprecation warnings.
           - `$ python -Wa manage.py runserver` to view all warnings.
 - Update all packages/dependencies.
-     (Hints:  
+     Hints:  
      - Use `$ pipenv update --outdated` to see which packages are out of date
      - Use `$ pipenv update <package_name>` to update a specific package
+     - Use `$ pipenv update` to update just the packages in the `[packages]` section of your Pipfile.
+     - Use `$ pipenv update --dev` to update both the `[packages]` and `[dev-packages]` of your Pipfile.
 - Update 'Current Django Version' in settings.py
