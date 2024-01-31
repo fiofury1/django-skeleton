@@ -214,7 +214,7 @@ AUTH_USER_MODEL = "accounts.CustomUser"
 
 # Tells where to redirect upon login and logout
 LOGIN_REDIRECT_URL = "main:home"
-LOGOUT_REDIRECT_URL = "main:home"
+# LOGOUT_REDIRECT_URL = "main:home"  # With oupdate to Django 5.0, change to use of logout_view() with redirect specified in view function.
 
 # Email - Uncomment/refactor as necessary to support email needs.
 DEFAULT_FROM_EMAIL = get_env_variable("DEFAULT_FROM_EMAIL")

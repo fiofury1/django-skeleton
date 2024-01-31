@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import SignUpView
+from .views import logout_view, SignUpView
 
 
 urlpatterns = [
@@ -14,5 +14,6 @@ urlpatterns = [
     #   path('reset/<uidb64>/<token>/', views.PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
     #   path('reset/done/', views.PasswordResetCompleteView.as_view(), name='password_reset_complete'),
     # Added Routes
+    path('logout/', logout_view, name='logout'),
     path("signup/", SignUpView.as_view(), name="signup"),
 ]
